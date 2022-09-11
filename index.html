@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+	<title>Calculadora</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="d-flex justify-content-center align-items-center">
+
+<section class="calculator d-inline-flex flex-direction-collumn">
+	<nav class="menu">
+		<ul>
+			<li>
+				<a href="">Calculadora Básica</a>
+			</li>
+			<li>
+				<a href="">Fórmula de Bhaskara</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		
+		<div class="container-visor">
+			<input id="visor" type="text" name="visor" onclick="disable();">
+		</div>
+		
+
+		<div class="operators d-flex flex-direction-row">
+			<span onclick="resetar();">C</span>
+			<span onclick="tecloumais();">+</span>
+			<span onclick="tecloumenos();">-</span>
+			<span onclick="tecloudividir();">/</span>
+			<span onclick="teclouvezes();">*</span>
+		</div>
+
+		<div class="numbers d-grid">
+			<span onclick="teclou1();" class="one">1</span>
+			<span onclick="teclou2();" class="two">2</span>
+			<span onclick="teclou3();" class="tree">3</span>
+			<span onclick="teclou4();" class="four">4</span>
+			<span onclick="teclou5();" class="five">5</span>
+			<span onclick="teclou6();" class="six">6</span>
+			<span onclick="teclou7();" class="seven">7</span>
+			<span onclick="teclou8();" class="eight">8</span>
+			<span onclick="teclou9();" class="nine">9</span>
+			<span onclick="teclou0();" class="zero">0</span>
+			<span onclick="resultado();" class="equal">=</span>
+		</div>
+
+	</div>
+</section>
+
+</body>
+</html>

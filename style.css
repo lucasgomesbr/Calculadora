@@ -1,0 +1,154 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: #122326;
+	height: 100vh;
+}
+
+/* Flebox */
+.d-flex{
+	display: flex;
+}
+.d-inline-flex{
+	display: inline-flex;
+}
+.justify-content-center{
+	justify-content: center;
+}
+.align-items-center{
+	align-items: center;
+}
+.flex-direction-collumn{
+	flex-direction: column;
+}
+.flex-direction-row{
+	flex-direction: row;
+}
+
+/* display grid */
+.d-grid{
+	display: grid;
+}
+
+/* Estilos principais do corpo da calculadora */
+.calculator{
+	box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(21, 51, 43, 0.3);
+	padding: 20px;
+	border-radius: 20px;
+	background-color: #122124;
+	height: 88%;
+}
+
+.menu ul, .visor{
+	margin-bottom: 15px;
+}
+.menu ul li{
+	display: inline;
+	list-style: none;
+}
+
+.menu ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+.menu ul li:nth-child(1){
+	margin-right: 10px;
+}
+
+/* Estilos principais do visor */
+.container-visor{
+	width: 100%;
+	box-shadow: inset 6px 6px 10px 0 rgb(0, 0, 0), inset -4px -4px 10px 0 rgba(255, 255, 255, 0.19);
+	margin-bottom: 15px;
+}
+
+.container-visor input{
+	background-color: #113921a6;
+	font-size: 1.6em;
+	border: none;
+	padding: 12px;
+	text-align: right;
+	color: #ffffff94;
+	font-family: 'Orbitron', sans-serif;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px #000;
+}
+
+/* Estilos principais dos botões da calculadora */
+.operators span{
+	flex: 1;
+	box-shadow: 5px 5px 6px 0 rgba(0, 0, 0, 0.2), -5px -4px 6px 0 rgba(53, 53, 53, 0.5);
+	font-size: 1.6rem;
+	border-radius: 13px;
+	padding: 1.1rem;
+	text-align: center;
+	margin: 7px;
+	color: #fffc;
+	cursor: pointer;
+}
+
+.numbers span {
+	text-align: center;
+	box-shadow: 5px 5px 6px 0 rgba(0, 0, 0, 0.2), -5px -4px 6px 0 rgba(53, 53, 53, 0.5);
+	font-size: 1.6rem;
+	border-radius: 13px;
+	margin: 6px;
+	color: #fffc;
+	cursor: pointer;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.numbers span:active, .operators span:active{
+	box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -3px -3px 6px 0 rgba(72, 72, 72, 0.5);
+	font-size: 1.5rem;
+}
+
+.numbers {
+	grid-template:
+		"seven eight nine equal"
+		"four five six equal"
+		"one two tree equal"
+		"zero zero zero equal"
+		;
+	height: 100%;	
+}
+
+.zero {
+	grid-area: zero;
+}
+.one {
+	grid-area: one;
+}
+.two {
+	grid-area: two;
+}
+.tree {
+	grid-area: tree;
+}
+.four {
+	grid-area: four;
+}
+.five {
+	grid-area: five;
+}
+.six {
+	grid-area: six;
+}
+.seven {
+	grid-area: seven;
+}
+.eight {
+	grid-area: eight;
+}
+.nine {
+	grid-area: nine;
+}
+.equal {
+	grid-area: equal;
+	justify-content: stretch;
+}
