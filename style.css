@@ -152,3 +152,31 @@ body{
 	grid-area: equal;
 	justify-content: stretch;
 }
+
+@media only screen and (max-width: 600px) {
+	.calculator {
+		box-shadow: none;
+		padding: 0px;
+		border-radius: 20px;
+		background-color: #122124;
+		height: 100%;
+		width: 100%;
+	}
+	.container-visor input {
+		background-color: #113921a6;
+		font-size: 1.6em;
+		border: none;
+		padding-top: 12px;
+		padding-left: 0;
+		text-align: right;
+		color: #ffffff94;
+		font-family: 'Orbitron', sans-serif;
+		letter-spacing: 2px;
+		text-shadow: 1px 1px #000;
+		width: 100%;
+		padding-bottom: 12px;
+	}
+	.container-visor {
+		display: flex;
+	}
+}
