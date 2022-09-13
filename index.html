@@ -12,7 +12,13 @@
 </head>
 <body class="d-flex justify-content-center align-items-center">
 
+<!-- audios que servem os botões! -->
+<audio id="PlaySoundButtons" src="assets/normalButton.wav" preload="auto"></audio>
+<audio id="PlaySoundResult" src="assets/result.wav" preload="auto"></audio>
+<audio id="PlaySoundClear" src="assets/clear.wav" preload="auto"></audio>
+
 <section class="calculator d-inline-flex flex-direction-collumn">
+	<!-- Em breve novas formulas! -->
 	<nav class="menu">
 		<ul>
 			<li>
@@ -26,31 +32,33 @@
 
 	<div class="container">
 		
+		<!-- Tela que mostra os resultados -->
 		<div class="container-visor">
 			<input id="visor" type="text" name="visor" onclick="disable();">
 		</div>
 		
-
+		<!-- Botões que efetuam operações e limpeza da tela de resultado -->
 		<div class="operators d-flex flex-direction-row">
-			<span onclick="resetar();">C</span>
-			<span onclick="tecloumais();">+</span>
-			<span onclick="tecloumenos();">-</span>
-			<span onclick="tecloudividir();">/</span>
-			<span onclick="teclouvezes();">*</span>
+			<span onclick="resetar();document.getElementById('PlaySoundClear').play();">C</span>
+			<span onclick="tecloumais();document.getElementById('PlaySoundButtons').play();">+</span>
+			<span onclick="tecloumenos();document.getElementById('PlaySoundButtons').play();">-</span>
+			<span onclick="tecloudividir();document.getElementById('PlaySoundButtons').play();">/</span>
+			<span onclick="teclouvezes();document.getElementById('PlaySoundButtons').play();">*</span>
 		</div>
 
+		<!-- Botôes numéricos e resultado -->
 		<div class="numbers d-grid">
-			<span onclick="teclou1();" class="one">1</span>
-			<span onclick="teclou2();" class="two">2</span>
-			<span onclick="teclou3();" class="tree">3</span>
-			<span onclick="teclou4();" class="four">4</span>
-			<span onclick="teclou5();" class="five">5</span>
-			<span onclick="teclou6();" class="six">6</span>
-			<span onclick="teclou7();" class="seven">7</span>
-			<span onclick="teclou8();" class="eight">8</span>
-			<span onclick="teclou9();" class="nine">9</span>
-			<span onclick="teclou0();" class="zero">0</span>
-			<span onclick="resultado();" class="equal">=</span>
+			<span onclick="teclou1();document.getElementById('PlaySoundButtons').play();" class="one">1</span>
+			<span onclick="teclou2();document.getElementById('PlaySoundButtons').play();" class="two">2</span>
+			<span onclick="teclou3();document.getElementById('PlaySoundButtons').play();" class="tree">3</span>
+			<span onclick="teclou4();document.getElementById('PlaySoundButtons').play();" class="four">4</span>
+			<span onclick="teclou5();document.getElementById('PlaySoundButtons').play();" class="five">5</span>
+			<span onclick="teclou6();document.getElementById('PlaySoundButtons').play();" class="six">6</span>
+			<span onclick="teclou7();document.getElementById('PlaySoundButtons').play();" class="seven">7</span>
+			<span onclick="teclou8();document.getElementById('PlaySoundButtons').play();" class="eight">8</span>
+			<span onclick="teclou9();document.getElementById('PlaySoundButtons').play();" class="nine">9</span>
+			<span onclick="teclou0();document.getElementById('PlaySoundButtons').play();" class="zero">0</span>
+			<span onclick="resultado();document.getElementById('PlaySoundResult').play();" class="equal">=</span>
 		</div>
 
 	</div>

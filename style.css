@@ -81,7 +81,7 @@ body{
 /* Estilos principais dos botões da calculadora */
 .operators span{
 	flex: 1;
-	box-shadow: 5px 5px 6px 0 rgba(0, 0, 0, 0.2), -5px -4px 6px 0 rgba(53, 53, 53, 0.5);
+	box-shadow: 5px 5px 6px 0 rgba(0, 0, 0, 0.2), -5px -4px 6px 0 rgba(47, 47, 47, 0.28);
 	font-size: 1.6rem;
 	border-radius: 13px;
 	padding: 1.1rem;
@@ -89,11 +89,12 @@ body{
 	margin: 7px;
 	color: #fffc;
 	cursor: pointer;
+	background-color: #0c181c;
 }
 
 .numbers span {
 	text-align: center;
-	box-shadow: 5px 5px 6px 0 rgba(0, 0, 0, 0.2), -5px -4px 6px 0 rgba(53, 53, 53, 0.5);
+	box-shadow: 5px 5px 6px 0 rgba(0, 0, 0, 0.2), -5px -4px 6px 0 rgba(47, 47, 47, 0.28);
 	font-size: 1.6rem;
 	border-radius: 13px;
 	margin: 6px;
@@ -102,10 +103,15 @@ body{
 	align-items: center;
 	display: flex;
 	justify-content: center;
+	background-color: #0c181c;
 }
 .numbers span:active, .operators span:active{
 	box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -3px -3px 6px 0 rgba(72, 72, 72, 0.5);
 	font-size: 1.5rem;
+}
+
+.numbers span:hover, .operators span:hover, .numbers span:focus, .operators span:focus{
+	background-color: #091417;
 }
 
 .numbers {
@@ -159,8 +165,9 @@ body{
 		padding: 0px;
 		border-radius: 20px;
 		background-color: #122124;
-		height: 100%;
 		width: 100%;
+		margin-right: 10px;
+		margin-left: 10px;
 	}
 	.container-visor input {
 		background-color: #113921a6;
