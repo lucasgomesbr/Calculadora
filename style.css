@@ -107,10 +107,10 @@ body{
 }
 .numbers span:active, .operators span:active{
 	box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -3px -3px 6px 0 rgba(72, 72, 72, 0.5);
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 }
 
-.numbers span:hover, .operators span:hover, .numbers span:focus, .operators span:focus{
+.numbers span:hover, .operators span:hover{
 	background-color: #091417;
 }
 
@@ -159,7 +159,7 @@ body{
 	justify-content: stretch;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 	.calculator {
 		box-shadow: none;
 		padding: 0px;
@@ -185,5 +185,12 @@ body{
 	}
 	.container-visor {
 		display: flex;
+	}
+	input, a, span, div {
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+	}
+	input {
+		pointer-events: none;
+		outline: none;
 	}
 }
