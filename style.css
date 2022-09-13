@@ -6,6 +6,7 @@
 body{
 	background-color: #122326;
 	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
 }
 
 /* Flebox */
