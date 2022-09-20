@@ -4,9 +4,12 @@
 }
 
 body{
-	background-color: #122326;
+	background-color: #0d1516;
 	height: 100vh;
-	height: calc(var(--vh, 1vh) * 100);
+}
+
+.container{
+	height: 100%;
 }
 
 /* Flebox */
@@ -36,11 +39,13 @@ body{
 
 /* Estilos principais do corpo da calculadora */
 .calculator{
-	box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(21, 51, 43, 0.3);
+	box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25);
 	padding: 20px;
 	border-radius: 20px;
 	background-color: #122124;
-	height: 88%;
+	height: 80%;
+	align-items: center;
+	justify-content: stretch;
 }
 
 .menu ul, .visor{
@@ -62,9 +67,10 @@ body{
 
 /* Estilos principais do visor */
 .container-visor{
-	width: 100%;
-	box-shadow: inset 6px 6px 10px 0 rgb(0, 0, 0), inset -4px -4px 10px 0 rgba(255, 255, 255, 0.19);
+	width: auto;
+	box-shadow: inset 6px 6px 10px 0 rgb(0, 0, 0), inset -4px -4px 10px 0 rgba(91, 91, 91, 0.53);
 	margin-bottom: 15px;
+	border: solid 1px #0000004f;
 }
 
 .container-visor input{
@@ -115,6 +121,7 @@ body{
 	background-color: #091417;
 }
 
+/* Grid esta sendo usado basicamente para alinhar de forma bi-dimensional as teclas dos botoes em relação ao botão de igualdade */
 .numbers {
 	grid-template:
 		"seven eight nine equal"
@@ -161,6 +168,9 @@ body{
 }
 
 @media only screen and (max-width: 768px) {
+	body{
+		background-color: #122124;
+	}
 	.calculator {
 		box-shadow: none;
 		padding: 0px;
